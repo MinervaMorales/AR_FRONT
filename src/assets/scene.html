@@ -1,0 +1,30 @@
+<!doctype HTML>
+<html>
+  <script type="module"
+  src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js">
+</script>
+
+<!-- Loads <model-viewer> for old browsers like IE11: -->
+<script nomodule
+  src="https://unpkg.com/@google/model-viewer/dist/model-viewer-legacy.js">
+</script>
+<body style='margin : 10px; overflow: hidden;'>
+
+  <model-viewer src="RobotExpressive.glb"
+  id="model-viewer"
+  shadow-intensity="1"
+  camera-controls
+  ar-scale="auto"
+  ar-placement="floor"
+  auto-rotate ar>
+</model-viewer>
+  <!--<model-viewer camera-controls autoplay ar ar-scale="auto"  ar-modes="webxr scene-viewer quick-look"
+  auto-rotate shadow-intensity="1" style="background-color: unset;" src="RobotExpressive.glb" alt="An animated 3D model of a robot"></model-viewer>
+  -->
+</body>
+<script>
+  var modelViewer = document.getElementById('model-viewer');
+   
+    modelViewer.activateAR(); 
+  </script>
+</html>

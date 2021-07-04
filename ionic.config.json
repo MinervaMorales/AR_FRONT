@@ -1,0 +1,7 @@
+{
+  "name": "ARDemo",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "angular"
+}
